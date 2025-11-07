@@ -1,0 +1,36 @@
+services:
+  web:
+    build:
+      context: ./front_end/
+      dockerfile: "Dockerfile"
+    depends_on:
+      webservice:
+        restart: true
+    develop:
+      watch:
+        - action: sync
+          path: ./front_end/
+          target: /web
+          ignore:
+            - ./front_end/.venv/
+        - action: rebuild
+          path: ./front_end/pyproject.toml
+  webservice:
+    build:
+      context: ./back_end/
+      dockerfile: "Dockerfile"
+    develop:
+      watch:
+        - action: sync
+          path: ./back_end/
+          target: /webserver
+          ignore:
+            - ./back_end/.venv/
+        - action: rebuild
+          path: ./back_end/pyproject.toml
+
+networks:
+  - front_end:
+    driver: "bridge"
+  - back_end:
+    driver: "bridge"

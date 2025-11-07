@@ -1,0 +1,9 @@
+[project]
+name = "front-end"
+version = "0.1.0"
+description = "Simple front-end webapp built with streamlit"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "streamlit>=1.51.0",
+]

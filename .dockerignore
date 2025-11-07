@@ -4,4 +4,18 @@
 
 # Docs
 README.md
-*/README.md
+**/README.md
+
+# Venv
+**/.venv/
+
+# Python
+**/__pycache__/
+**/*.py[oc]
+**/build/
+**/dist/
+**/wheels/
+**/*.egg-info
+
+# Editor
+.vscode/

@@ -11,3 +11,5 @@
 
 # Editor thingy
 .vscode/
+
+.env

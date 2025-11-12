@@ -1,5 +1,3 @@
 from . import fetch
 
-__all__ = [
-    "fetch"
-]
+__all__ = ["fetch"]

@@ -1,5 +1,3 @@
 from . import table
 
-__all__ = [
-    "table"
-]
+__all__ = ["table"]

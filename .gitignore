@@ -6,6 +6,9 @@
 **/wheels/
 **/*.egg-info
 
+**/.python-version
+**/.ruff-cache/
+
 # Venv stuff
 */.venv
 

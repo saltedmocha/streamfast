@@ -1,3 +1,3 @@
-__all__ = ["table"]
-
 from . import table
+
+__all__ = ["table"]

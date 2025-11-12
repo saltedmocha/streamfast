@@ -1,4 +1,4 @@
-__all__ = ["bin", "widgets"]
-
-from . import bin
+from . import utils
 from . import widgets
+
+__all__ = ["utils", "widgets"]
